@@ -1,10 +1,21 @@
 window.MathJax = {
-    TeX: { equationNumbers: { autoNumber: "AMS" }},
-    tex2jax: {
-      inlineMath: [ ['$','$'], ["\\(","\\)"] ],
-      processEscapes: true
+    chtml: {
+      matchFontHeight: false
     },
-    "HTML-CSS": { matchFontHeight: false },
-    displayAlign: "left",
-    displayIndent: "2em"
+    tex: {
+      inlineMath: [['$', '$']]
+    },
+    svg: {
+      fontCache: 'global'
+    }
   };
+  
+  (function () {
+    const script = document.createElement('script');
+    if (navigator.userAgent.includes("Chrome") || navigator.userAgent.includes("Firefox"))
+      script.src = "https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-svg.js";
+    else
+      script.src = "https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-chtml.js";
+    script.async = true;
+    document.head.appendChild(script);
+  })();

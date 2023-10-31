@@ -2,61 +2,103 @@
 <html>
     <head>
         <meta charset='utf-8'>
-        <title> Hayato Nasu's Homepage </title>
-        <style>
-            p {
-                font-size: 20px;
-                font-family: "UD デジタル 教科書体 N-R","UD Digi Kyokasho N-R";
-            }
-            h1 {
-                font-size: 40px;
-                font-family: "UD デジタル 教科書体 N-B","UD Digi Kyokasho N-B";
-            }
-            h2 {
-                font-size: 30px;
-                font-family: "UD デジタル 教科書体 N-B","UD Digi Kyokasho N-B";
-            }
-            h3 {
-                font-size: 20px;
-                font-family: "UD デジタル 教科書体 N-B","UD Digi Kyokasho N-B";
-            }
-            ul {
-                font-size: 20px;
-                font-family: "UD デジタル 教科書体 N-R","UD Digi Kyokasho N-R";
-            }
-        </style>
+        <title>奈須隼大のホームページ</title>
         <script src="mathjax_setting.js" async></script>
-    </head>
-    <body>
-    <header> 
-    <a href="index.html">English page</a>
-    </header>
-    <h1>Hayato Nasu 奈須隼大</h1>
-    <p> 私は京都大学数理解析研究所の修士課程の学生です。</p>
-    <p> 私は<a href="https://www.kurims.kyoto-u.ac.jp/~cs/index.html">コンピュータサイエンスグループ</a>のメンバーです。 </p>
-    <h2>研究分野</h2>
-    <p> 私は以下のトピックに興味があります： </p>
-    <ul>
-        <li> カテゴリカルロジック &ndash; トポス理論、ハイパードクトリン、型理論のカテゴリカル意味論 </li>
-        <li> 圏論 &ndash; トポス、ダブルカテゴリー、高次圏 </li>
-        <li> 型理論 &ndash; 依存型理論、ホモトピー型理論、構造的集合論 </li>
-    </ul>
-    <h2>論文</h2>
-    <h3>プレプリント</h3>
-    <ul>
-        <li>
-            <a href="https://arxiv.org/abs/2310.19428">Double Categories of Relations Relative to Factorisation Systems, with Keisuke Hoshino (2023) </a>
-            arXiv:2310.19428
-        </li>
-    </ul> 
-    <h2>ノート</h2>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+        <link rel='stylesheet' href='https://fonts.googleapis.com/css?family=Roboto'>
+        <link rel="stylesheet" href="fonts/academicons-1.9.4/css/academicons.min.css"/>
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
+        <style>
+        html,body,h1,h2,h3,h4,h5,h6 {font-family: "Helvetica Neue", sans-serif}
+        p {font-family: "Helvetica Neue", sans-serif}
+        summary {
+        display: block;
+        }
 
-    <h2>解説</h2>
-    <ul>
-        <li><a href="dcr_intro.html">Double Categories of Relations</a></li>
-    </ul>
-    <footer>
+        /* Chrome、Safari */
+        summary::-webkit-details-marker {
+        display: none;
+        }
+            .lang {
+            display: block;
+            width: 200px;
+            height: 36px;
+            line-height: 28px;
+            text-align: center;
+            margin-left: auto;
+            background: #42602D;
+            color: whitesmoke;
+            text-decoration: none;
+            border-radius: 4px;
+        }
+        </style>
+    </head>
+    <body class="w3-light-grey">
+    <header> 
+
+    </header>
+
+    <div class="w3-content w3-margin-top" style="max-width:1400px;">
+    <div class="w3-row-padding">
+
+    <div class="w3-threequarter">
+        <div class="w3-white w3-text-dark-gray w3-card-4">
+
+        <div class="w3-container">
+        <h1>奈須隼大 Hayato Nasu</h1>
+        <p>京都大学数理解析研究所の修士課程に在籍しています。</p>
+        <p><a href="https://www.kurims.kyoto-u.ac.jp/~cs/index.html">コンピュータサイエンスグループ</a>のメンバーです。</p> 
+        </div>
+
+        <div class="w3-container">
+        <h2 class="w3-large"><b><i class="fa fa-seedling fa-fw w3-margin-right" style="color:#42602D;"></i>研究分野</b></h2>
+        <p>以下の分野に興味があります:</p>
+        <ul>
+            <li>範疇論 - トポス理論、ハイパードクトリン、型理論の範疇的意味論</li>
+            <li>圏論 - トポス、ダブル圏、高次圏</li>
+            <li>型理論 - 依存型理論、ホモトピー型理論、構造的集合論</li>
+        </ul>
+        <h2 class="w3-large"><b><i class="ai ai-arxiv w3-margin-right" style="color:#42602D;"></i>ArXivにおけるプレプリント</b></h2>
+        <ul class="w3-ul w3-card-4">
+            <li>
+                Double Categories of Relations Relative to Factorisation Systems, with Keisuke Hoshino (2023)
+                <br>
+                <a href="https://arxiv.org/abs/2310.19428">arXiv:2310.19428</a> 
+                <details>
+                    <summary style="color: #42602D;">
+                        <i class="fa fa-caret-square-down"></i>
+                        概要
+                    </summary>
+                    We relativise double categories of relations to stable orthogonal factorisation systems. Furthermore, we present the characterisation of the relative double categories of relations in two ways. The first utilises a generalised comprehension scheme, and the second focuses on a specific class of vertical arrows defined solely double-categorically. We organise diverse classes of double categories of relations and correlate them with significant classes of factorisation systems. Our framework embraces double categories of spans and double categories of relations on regular categories, which we meticulously compare to existing work on the characterisations of bicategories and double categories of spans and relations.
+                </details>
+            </li>
+        </ul>
+      
+
+        <h2 class="w3-large"><b><i class="fa fa-book-open fa-fw w3-margin-right" style="color:#42602D;"></i>ノート</b></h2>
+        </div>
+        </div>
+    </div>
+
+    <div class="w3-quarter">
+        <a href="index.html" class="w3-btn lang">English Page</a>
+        <br>
+        <div class="w3-display-container">
+            <img src="Images/IMG_3566.jpg" style="width:100%" alt="Me in momiji trees">
+        </div>
+    </div>
+    </div>
+
+    </div>
+    
+    <footer class="w3-container w3-center w3-margin-top" style="color: whitesmoke; background-color: #42602D;">
         <p>Email : Replace $\Sigma$ with @ in hnasu.kurims$\Sigma$kyoto-u.ac.jp</p>
-    </footer>
+        <i class="fab fa-facebook w3-hover-opacity"></i>
+        <i class="fab fa-mastodon w3-hover-opacity"></i>
+        <i class="fab fa-x-twitter w3-hover-opacity"></i>
+      </footer>
+   
     </body>
-    </html>
+</html>

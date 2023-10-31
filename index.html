@@ -8,60 +8,97 @@
         <meta name="viewport" content="width=device-width, initial-scale=1">
         <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
         <link rel='stylesheet' href='https://fonts.googleapis.com/css?family=Roboto'>
-        <link rel="stylesheet" href="/path/to/folder/css/academicons.min.css"/>
-        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+        <link rel="stylesheet" href="fonts/academicons-1.9.4/css/academicons.min.css"/>
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
         <style>
         html,body,h1,h2,h3,h4,h5,h6 {font-family: "Helvetica Neue", sans-serif}
         p {font-family: "Helvetica Neue", sans-serif}
+        summary {
+        display: block;
+        }
+
+        /* Chrome、Safari */
+        summary::-webkit-details-marker {
+        display: none;
+        }
+            .lang {
+            display: block;
+            width: 200px;
+            height: 36px;
+            line-height: 28px;
+            text-align: center;
+            margin-left: auto;
+            background: #42602D;
+            color: whitesmoke;
+            text-decoration: none;
+            border-radius: 4px;
+        }
         </style>
     </head>
     <body class="w3-light-grey">
     <header> 
-    <a href="indexj.html">日本語ページ</a>
+
     </header>
 
     <div class="w3-content w3-margin-top" style="max-width:1400px;">
     <div class="w3-row-padding">
-    <h1>Hayato Nasu 奈須隼大</h1>
-    <div class="w3-twothird">
-        <div class="w3-white w3-text-grey w3-card-4">
+
+    <div class="w3-threequarter">
+        <div class="w3-white w3-text-dark-gray w3-card-4">
 
         <div class="w3-container">
+        <h1> Hayato Nasu 奈須隼大</h1>
         <p> I am a master's student at RIMS, Kyoto University, Japan.</p>
         <p> I am a member of the <a href="https://www.kurims.kyoto-u.ac.jp/~cs/index.html"> Computer Science Group</a>.  </p> 
         </div>
 
         <div class="w3-container">
-        <h2 class="w3-large"><b><i class="fa fa-leaf fa-fw w3-margin-right" style="color:#42602D;"></i>Research Intersts</b></h2>
+        <h2 class="w3-large"><b><i class="fa fa-seedling fa-fw w3-margin-right" style="color:#42602D;"></i>Research Intersts</b></h2>
         <p> I am interested in the following topics: </p>
         <ul>
             <li> Categorical Logic &ndash; topos theory, hyperdoctrines, categorical semantics of type theory </li>
             <li> Category Theory &ndash; toposes, double categories, higher categories </li>
             <li> Type Theory &ndash; dependent type theory, homotopy type theory, structural set theory </li>
         </ul>
-        <h2 class="w3-large"><b><i class="fa fa-arxiv fa-fw w3-margin-right" style="color:#42602D;"></i>Preprints</b></h2>
-        <ul>
+        <h2 class="w3-large"><b><i class="ai ai-arxiv w3-margin-right" style="color:#42602D;"></i>Preprints on ArXiv</b></h2>
+        <ul class="w3-ul w3-card-4">
             <li>
                 Double Categories of Relations Relative to Factorisation Systems, with Keisuke Hoshino (2023)
-            <a href="https://arxiv.org/abs/2310.19428">arXiv:2310.19428</a>
+                <br>
+                <a href="https://arxiv.org/abs/2310.19428">arXiv:2310.19428</a> 
+                <details>
+                    <summary style="color: #42602D;">
+                        <i class="fa fa-caret-square-down"></i>
+                        Abstract
+                    </summary>
+                    We relativise double categories of relations to stable orthogonal factorisation systems. Furthermore, we present the characterisation of the relative double categories of relations in two ways. The first utilises a generalised comprehension scheme, and the second focuses on a specific class of vertical arrows defined solely double-categorically. We organise diverse classes of double categories of relations and correlate them with significant classes of factorisation systems. Our framework embraces double categories of spans and double categories of relations on regular categories, which we meticulously compare to existing work on the characterisations of bicategories and double categories of spans and relations.
+                </details>
             </li>
-        </ul> 
-        <h2 class="w3-large"><b><i class="fa fa-leaf fa-fw w3-margin-right" style="color:#42602D;"></i>Notes</b></h2>
+        </ul>
+      
+
+        <h2 class="w3-large"><b><i class="fa fa-book-open fa-fw w3-margin-right" style="color:#42602D;"></i>Notes</b></h2>
         </div>
         </div>
     </div>
 
-    <div class="w3-third">
+    <div class="w3-quarter">
+        <a href="indexj.html" class="w3-btn lang">日本語ページ</a>
+        <br>
         <div class="w3-display-container">
             <img src="Images/IMG_3566.jpg" style="width:100%" alt="Me in momiji trees">
         </div>
     </div>
     </div>
+
     </div>
     
-
-    <footer>
+    <footer class="w3-container w3-center w3-margin-top" style="color: whitesmoke; background-color: #42602D;">
         <p>Email : Replace $\Sigma$ with @ in hnasu.kurims$\Sigma$kyoto-u.ac.jp</p>
+        <i class="fab fa-facebook w3-hover-opacity"></i>
+        <i class="fab fa-mastodon w3-hover-opacity"></i>
+        <i class="fab fa-x-twitter w3-hover-opacity"></i>
       </footer>
+   
     </body>
 </html>
